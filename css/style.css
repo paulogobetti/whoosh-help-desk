@@ -4,10 +4,6 @@
 	--whoosh-yellow: #00fc2b;
 }
 
-body {
-	background: var(--bg-color);
-}
-
 a {
 	color: var(--white);
 }
@@ -44,6 +40,7 @@ a:hover {
 }
 
 .submit-button {
+	min-width: 300px;
 	width: 100%;
 	border-radius: 10px;
 	border: 1px solid var(--whoosh-yellow);
@@ -61,4 +58,12 @@ a:hover {
 	padding: 90px;
 	border-radius: 10px;
 	box-shadow: rgba(0, 0, 0, .048);
+}
+
+#login-page {
+	background: var(--bg-color);
+}
+
+#open-ticket-box {
+	padding: 10px;
 }
