@@ -1,6 +1,6 @@
 <?php
 
-	require_once('validate_access.php');
+	require_once('validate-access.php');
 
 ?>
 
@@ -26,7 +26,7 @@
 		<div>
 			<div>
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<a href="index.php"><img src="img/whoosh-logo-icon-ng.svg" width="70"></a>
+					<a href="dashboard.php"><img src="img/whoosh-logo-icon-ng.svg" width="70"></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
 					<span class="navbar-toggler-icon"></span>
 					</button>

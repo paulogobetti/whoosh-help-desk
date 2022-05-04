@@ -1,29 +1,18 @@
 <?php
 
-	// if(isset($_POST['submit'])) {
+	// [pendente] Inserir condicional para bloquear o script sem o submit
+		$ticketFile = fopen('tickets.tkt', 'a');
 
-	// 	$subject = $_POST['subject'];
-	// 	$category = $_POST['category'];
-	// 	$description = $_POST['description'];
+		$toText = str_replace('#', '-', array(
 
-	// }
+			$_POST['subject'],
+			$_POST['category'],
+			$_POST['description'] . PHP_EOL));
 
-	// print_r($_POST);
+		$ticketSubmit = implode(' # ', $toText);
 
-	// echo '<br>';
+		fwrite($ticketFile, $ticketSubmit);
 
-	$ticketFile = fopen('tickets.tkt', 'a');
-
-	$toText = str_replace('#', '|', array(
-
-		$_POST['subject'],
-		$_POST['category'],
-		$_POST['description'] . PHP_EOL));
-
-	$ticketSubmit = implode(' # ', $toText);
-
-	fwrite($ticketFile, $ticketSubmit);
-
-	fclose($ticketFile);
+		fclose($ticketFile);
 
 	echo $ticketSubmit;

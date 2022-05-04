@@ -1,6 +1,6 @@
 <?php
 
-	require_once('validate_access.php');
+	require_once('validate-access.php');
 
 	include('top-bar.php');
 

@@ -1,6 +1,6 @@
 <?php
 
-	require_once('validate_access.php');
+	require_once('validate-access.php');
 
 	include('top-bar.php');
 
@@ -12,9 +12,10 @@
 
 <head>
 
-	<title>Whoosh! Help Desk | Open Ticket</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" href="img/whoosh-logo-icon.svg">
+	<title>Whoosh! Help Desk | Open Ticket</title>
 
 </head>
 
@@ -46,6 +47,7 @@
 						    <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						  </div>
 						  <button type="submit" class="btn btn-primary">Open Ticket</button>
+						  <a href="dashboard.php" class="btn btn-warning">Back</a>
 						</form>
 					  </div>
 					</div>
