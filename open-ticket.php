@@ -29,28 +29,27 @@
 					    Open a New Ticket
 					  </div>
 					  <div id="open-ticket-box">
-						<form>
+						<form action="register-ticket.php" method="POST">
 						  <div class="form-group">
-						    <label for="exampleFormControlInput1">Email Address</label>
-						    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@youremail.com">
+						    <label for="exampleFormControlInput1">Subject</label>
+						    <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Enter a subject for your ticket">
 						  </div>
 						  <div class="form-group">
 						    <label for="exampleFormControlSelect1">Category</label>
-						    <select class="form-control" id="exampleFormControlSelect1">
+						    <select  name="category" class="form-control" id="exampleFormControlSelect1">
 						      <option>Technical Support</option>
 						      <option>Financial</option>
 						    </select>
 						  </div>
 						  <div class="form-group">
 						    <label for="exampleFormControlTextarea1">Description</label>
-						    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						    <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 						  </div>
 						  <button type="submit" class="btn btn-primary">Open Ticket</button>
 						</form>
 					  </div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</section>
