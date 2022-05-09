@@ -29,7 +29,7 @@
 						Dashboard
 					</div>
 					<div class="card-body">
-					<h5 class="card-title">Welcome, Fulano!</h5>
+					<h5 class="card-title">Welcome, <?= $_SESSION['name'] ?></h5>
 					<p class="card-text">
 						Open a ticket so that we can assist you.
 					</p>

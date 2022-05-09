@@ -6,8 +6,8 @@
 
     $ticketList = array();
 
-    // [pendente] Buscar somente se submitar
-        $ticketFile = fopen('tickets.tkt', 'r');
+    // [pendente] buscar somente se submitar
+        $ticketFile = fopen('../private/tickets.tkt', 'r');
 
         while(!feof($ticketFile)) {
 
@@ -45,7 +45,7 @@
                             Consult a Ticket
                         </div>
                         <div id="open-ticket-box">
-                            <!-- CARD TICKET -->
+                            <!-- TICKET CARD -->
                             <?php
                                 foreach($ticketList as $ticketItem) {
                             ?>
@@ -64,11 +64,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title"><?= $dynamicTicketCard[1] ?></h5>
                                     <h6 class="card-title"><small><?= $dynamicTicketCard[2] ?></small></h6>
-                                    <p class="card-text"><?= $dynamicTicketCard[3]?></p>
+                                    <p class="card-text"><?= $dynamicTicketCard[3] ?></p>
                                 </div>
                             </div>
                             <?php } ?>
-                            <!-- CARD TICKET -->
+                            <!-- TICKET CARD -->
                             <button type="submit" class="btn btn-primary">Consult</button>
                             <a href="dashboard.php" class="btn btn-warning">Back</a>
                         </div>

@@ -3,7 +3,7 @@
 	session_start();
 
 	// [pendente] Inserir condicional para bloquear o script sem o submit
-		$ticketFile = fopen('tickets.tkt', 'a');
+		$ticketFile = fopen('../private/tickets.tkt', 'a');
 
 		$toText = str_replace('#', '-', array(
 
