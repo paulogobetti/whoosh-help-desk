@@ -50,15 +50,20 @@
                             ?>
                             <?php
                                 $dynamicTicketCard = explode('#', $ticketItem);
+                                if($_SESSION['permission_level'] == 2) {
+                                    if($_SESSION['id'] != $dynamicTicketCard[0]) {
+                                        continue;
+                                    }
+                                }
                                 if(count($dynamicTicketCard) < 3) {
                                     continue;
                                 }
                             ?>
                             <div class="card mb-2">
                                 <div class="card-body">
-                                    <h5 class="card-title"><?= $dynamicTicketCard[0] ?></h5>
-                                    <h6 class="card-title"><small><?= $dynamicTicketCard[1] ?></small></h6>
-                                    <p class="card-text"><?= $dynamicTicketCard[2]?></p>
+                                    <h5 class="card-title"><?= $dynamicTicketCard[1] ?></h5>
+                                    <h6 class="card-title"><small><?= $dynamicTicketCard[2] ?></small></h6>
+                                    <p class="card-text"><?= $dynamicTicketCard[3]?></p>
                                 </div>
                             </div>
                             <?php } ?>
@@ -71,6 +76,10 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <?php include('footer.php'); ?>
+    </footer>
 
 </body>
 

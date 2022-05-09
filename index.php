@@ -25,7 +25,7 @@
 				<p><em>Please, insert your Login and Password</em></p>
 				<br>
 				<form action="login.php" method="POST">
-					<input type="text" name="id" placeholder="Email or ID" class="input-field">
+					<input type="email" name="email" placeholder="Email or ID" class="input-field">
 					<br><br>
 					<input type="password" name="pass" placeholder="Password" class="input-field">
 					<p class="text-right"><small><a href="#">Forgot password?</a></small></p>

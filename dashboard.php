@@ -6,7 +6,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
 <html lang="en">
 
@@ -39,6 +39,10 @@
 			</div>
 		</div>
 	</section>
+
+	<footer>
+        <?php include('footer.php'); ?>
+    </footer>
 
 </body>
 
